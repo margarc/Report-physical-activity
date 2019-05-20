@@ -5,3 +5,5 @@ Mutate() allows you to add variables to your dataset
 
 example 
 df_measurements_men <- mutate(df_measurements_men, bmi_per_man = kg/(m^2))
+?print.meta
+print.meta(totmort, cilayout(bracket = "(", separator = ","))
