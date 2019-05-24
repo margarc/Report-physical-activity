@@ -7,3 +7,7 @@ example
 df_measurements_men <- mutate(df_measurements_men, bmi_per_man = kg/(m^2))
 ?print.meta
 print.meta(totmort, cilayout(bracket = "(", separator = ","))
+
+R function cilayout can be utilised to change the layout to print confidence intervals 
+(both in printout from print.meta and print.summary.meta function as well as in forest plots). The default layout is "[lower; upper]". 
+Another popular layout is "(lower - upper)" which is used throughout an R session by using R command cilayout("(", " - ").
