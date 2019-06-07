@@ -11,3 +11,9 @@ print.meta(totmort, cilayout(bracket = "(", separator = ","))
 R function cilayout can be utilised to change the layout to print confidence intervals 
 (both in printout from print.meta and print.summary.meta function as well as in forest plots). The default layout is "[lower; upper]". 
 Another popular layout is "(lower - upper)" which is used throughout an R session by using R command cilayout("(", " - ").
+
+# When I need to rename the studies in the dataset can use ifelse 
+# old name one followed by new name
+newd$StudyDescription <- ifelse(newd$StudyDescription=="Collaborative Women's Longevity Study", "CWLS", 
+                                ifelse(newd$StudyDescription=="Health Eating Activity and Lifestyle Study",
+                                       "HEAL", ifelse(newd$StudyDescription=="Nurses' Health Study", "NHS", NA)))
