@@ -24,3 +24,5 @@ newd$StudyDescription <- ifelse(newd$StudyDescription=="Collaborative Women's Lo
 # to export and save automatically to a STATA file:
 library(foreign)
 write.dta(clean, "meta_data/data_fibre_totmortal.dta")
+
+
