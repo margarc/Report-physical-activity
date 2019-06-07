@@ -25,4 +25,5 @@ newd$StudyDescription <- ifelse(newd$StudyDescription=="Collaborative Women's Lo
 library(foreign)
 write.dta(clean, "meta_data/data_fibre_totmortal.dta")
 
-
+specify number of digits on forest plot after comma: 
+digits = 2
