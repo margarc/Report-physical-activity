@@ -17,3 +17,10 @@ Another popular layout is "(lower - upper)" which is used throughout an R sessio
 newd$StudyDescription <- ifelse(newd$StudyDescription=="Collaborative Women's Longevity Study", "CWLS", 
                                 ifelse(newd$StudyDescription=="Health Eating Activity and Lifestyle Study",
                                        "HEAL", ifelse(newd$StudyDescription=="Nurses' Health Study", "NHS", NA)))
+
+
+
+
+# to export and save automatically to a STATA file:
+library(foreign)
+write.dta(clean, "meta_data/data_fibre_totmortal.dta")
