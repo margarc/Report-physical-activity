@@ -58,17 +58,16 @@ resultsnew$`Study Description` <- ifelse(resultsnew$`Study Description`=="Cancer
 
 
 # add the contrast column 
-resultsnew$contrast <- c("XX",
-                         ">9 vs 0 MET-h/week",
-                         ">9 vs 0 MET-h/week",
-                         ">=27 vs <5.3 MET-h/week",
-                         ">=6 vs <1 hours/week",
-                         ">1 vs <=0 hours/week",
-                         ">=10.3 vs <2 MET-h/week",
-                         ">=15.1 vs <0 MET-h/week", 
-                        "22.9–107 vs 0–1.3 MET-h/week",
-                       ">=17.5 vs <3.5 MET-h/week")
-
+resultsnew$contrast <- c("XX", # maliniak to be deleted
+                         ">9 vs 0 MET-h/week", # Irwin moderate-vigorous 
+                         ">=27 vs <5.3 MET-h/week", # sternfeld moderate-vigorous 
+                         ">=6 vs <1 hours/week", # sterfeld moderate
+                         ">1 vs <=0 hours/week", # sternfeld vigorous
+                         ">=10.3 vs <2 MET-h/week", # holick moderate
+                         ">=15.1 vs <0 MET-h/week",  # holick vigorous
+                        "22.9–107 vs 0–1.3 MET-h/week", # bertram moderate-vigorous 
+                       ">=17.5 vs <3.5 MET-h/week") # maliniak moderate-vogorous
+    
 
 
 vigmodtotmort <- metagen(TE = vigmod_totmort$logRR, seTE = vigmod_totmort$sei,  data=vigmod_totmort, 
