@@ -27,3 +27,50 @@ write.dta(clean, "meta_data/data_fibre_totmortal.dta")
 
 specify number of digits on forest plot after comma: 
 digits = 2
+
+
+For the Forest plot: 
+Show pooled results of subgroups but not an overall pooling at the bottom of the plot like this: 
+
+forest.meta(vigmodtotmort, studlab = TRUE, 
+            comb.random = vigmodtotmort$comb.random,
+            lyt.random = TRUE,
+            type.study="square",
+            squaresize=0.5,
+            type.random="diamond",
+            subgroup = TRUE, #-- we need to see the pooled results of subgroups
+            overall = FALSE, #-- but not an overall pooling as studies are repeated 
+            print.subgroup.labels = TRUE,
+            bylab = "",
+            text.random = "", #-- this line to delete text for Random effects model
+            col.study="black", 
+            col.square="black", 
+            col.inside="white", 
+            col.diamond="transparent", 
+            col.diamond.lines="black",
+            col.label.right="black",
+            col.label.left="black",
+            col.by="black", # specify the color of the results for subgroups
+            smlab="", # this to delete the risk ratio at the top of the plot
+            leftcols=c("studlab", "Year"),# to remove TE and seTE from plot
+            rightcols=c("effect", "ci", "w.random","Study Description", "contrast"),
+            rightlabs=c("RR","95% CI", "% Weight", "Study Description", "  contrast (high vs low)"),
+            hetlab = "Overall: ", 
+            lwd=0.9,
+            print.I2 = vigmodtotmort$comb.random,
+            plotwidth="5cm",
+            colgap.forest.left="0.5cm",
+            colgap.forest.right="0.000005cm",
+            colgap.right="0.5cm",
+            print.I2.ci = FALSE, 
+            print.tau2 = FALSE, 
+            print.Q = FALSE,
+            digits = 2, #-- specifies the number of digits on the plot after comma
+            fontsize = 7)
+            
+            
+            
+            
+            
+            
+            
