@@ -56,8 +56,18 @@ resultsnew$`Study Description` <- ifelse(resultsnew$`Study Description`=="Cancer
                                                               ifelse(resultsnew$`Study Description`=="LACE", "LACE", NA)))))
 
 
-#######################
 
+# add the contrast column 
+resultsnew$contrast <- c("XX",
+                         ">9 vs 0 MET-h/week",
+                         ">9 vs 0 MET-h/week",
+                         ">=27 vs <5.3 MET-h/week",
+                         ">=6 vs <1 hours/week",
+                         ">1 vs <=0 hours/week",
+                         ">=10.3 vs <2 MET-h/week",
+                         ">=15.1 vs <0 MET-h/week", 
+                        "22.9–107 vs 0–1.3 MET-h/week",
+                       ">=17.5 vs <3.5 MET-h/week")
 
 
 
