@@ -68,9 +68,13 @@ forest.meta(vigmodtotmort, studlab = TRUE,
             digits = 2, #-- specifies the number of digits on the plot after comma
             fontsize = 7)
             
-            
-            
-            
+           
+           
+For the dose-response
+# To subtract the numbers of the rows by the first row use: 
+databeas$try <- databeas$midpoint-(databeas$midpoint[1])
+# the value of row 1 i.e. [1] here is 0 
+
             
             
             
