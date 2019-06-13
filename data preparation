@@ -75,6 +75,10 @@ For the dose-response
 databeas$try <- databeas$midpoint-(databeas$midpoint[1])
 # the value of row 1 i.e. [1] here is 0 
 
-            
+Adding Rows
+Join two data frames (datasets) vertically: use the rbind function. 
+The two data frames must have the same variables, but they do not have to be in the same order.
+Example:
+total <- rbind(data frameA, data frameB)           
             
             
