@@ -19,6 +19,8 @@ library(dosresmeta)
 ?`dosresmeta-package`
 dir.create("plots")
 
+
+# Moderate and Vigorous (subgroups)
 test <- read_excel("physactiv_forestpost.xlsx",sheet="modvig_bremortal")
 dim(test) # 35 , 110 
 
@@ -27,7 +29,6 @@ results <- subset(test, highvslow=="yes")
 dim(results) # 6, 110
 View(results)
 
-View(results)
 
 resultsnew <- results %>%
  select(Author, Year, StudyDescription, MenoStatus, SizeStudy, Number_Women, LengthFollowUp,
@@ -35,7 +36,7 @@ resultsnew <- results %>%
         RR, CILow, CIUpper, Reference, maxFromReference, analysis_type)
 View(resultsnew)
 
-dim(resultsnew) # 6 , 16 cols
+dim(resultsnew) # 6 rows , 16 cols
 
 # add new row with the results of Maliniak that was caclulated with the Fixed effects model 
 newRow <- data.frame(Author="Maliniak", Year="2018", StudyDescription="Cancer Prevention Study II Nutrition Cohort", 
@@ -58,7 +59,7 @@ resultsnew$`Study Description` <- ifelse(resultsnew$`Study Description`=="Cancer
 
 
 # add the contrast column 
-resultsnew$contrast <- c("XX", # maliniak to be deleted
+resultsnew$contrast <- c("XX", # maliniak to be deleted , I computed average of the two estimates uing fixed effects model; use that intead
                          ">9 vs 0 MET-h/week", # Irwin moderate-vigorous 
                          ">=27 vs <5.3 MET-h/week", # sternfeld moderate-vigorous 
                          ">=6 vs <1 hours/week", # sterfeld moderate
