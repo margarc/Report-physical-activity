@@ -1,6 +1,4 @@
-Physical activity
-
-Physical activity and Outcomes (mortality, recurrence) in Breast Cancer survivors
+Physical activity (various types) and Outcomes (mortality, recurrence) in Breast Cancer survivors
 
 Meta-analysis:
 
