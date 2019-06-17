@@ -26,5 +26,6 @@ exp(0.0043)^10  #  1.043938
 # Alternatively to calculate the midpoint directly: 
 # lower bound of the top open ended cat/quant+[(upper-lower bound of the previous category)/2]
 
-# Values for case-control, incidence-rate and cumulative incidence data are cc, ir, and ci, respectively
+# In the command: type=an optional vector (or a string) required when the outcome is log relative risks. 
+# It specifies the study-specific designValues for case-control, incidence-rate and cumulative incidence data are cc, ir, and ci, respectively
 
