@@ -26,5 +26,5 @@ exp(0.0043)^10  #  1.043938
 # Alternatively to calculate the midpoint directly: 
 # lower bound of the top open ended cat/quant+[(upper-lower bound of the previous category)/2]
 
-
+# Values for case-control, incidence-rate and cumulative incidence data are cc, ir, and ci, respectively
 
