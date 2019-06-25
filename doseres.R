@@ -17,6 +17,14 @@ exp(-0.0314)^10 # 0.730519
 # get the upper confidence interval per 10 g/day
 exp(0.0043)^10  #  1.043938
 
+#--NOTE
+#--Convert from character to numeric: apply the function as.numeric to specific [non-consecutive] columns of the dataset  
+id = c(8:9, 13:15, 18:20)
+
+brefibr <- mutate_each(brefibr, funs(as.numeric), id)
+
+View(brefibr) #----> now converted to numeric
+
 
 # For fibre and physical activity open ended categories, if the lower limit of the first one is missing then put the lower bound to be ZERO. 
 
