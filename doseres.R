@@ -36,4 +36,4 @@ View(brefibr) #----> now converted to numeric
 
 # In the command: type=an optional vector (or a string) required when the outcome is log relative risks. 
 # It specifies the study-specific design: Values for case-control, incidence-rate and cumulative incidence data are cc, ir, and ci, respectively
-
+# more than 2 categories needed 
