@@ -19,7 +19,6 @@ library(dosresmeta)
 ?`dosresmeta-package`
 dir.create("plots")
 
-
 # Moderate and Vigorous (subgroups)
 test <- read_excel("physactiv_forestpost.xlsx",sheet="modvig_bremortal")
 dim(test) # 35 , 110 
