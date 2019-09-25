@@ -61,7 +61,7 @@ log(1)/24.96 # = 0
 0*10 # 0 
 exp(0) #= 1
 
-# So the estimate per 10 nmol/L is HR 0.91 95% CI 0.825-1.00
+# So the estimate per 10 nmol/L is HR 0.91 95% CI 0.825-1.00 -use it in the dose-response-
 
 
 
