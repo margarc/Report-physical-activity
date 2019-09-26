@@ -39,7 +39,7 @@ exp(-0.1725893) # =0.8414831
 exp(-0.0205502)
 # Upper 95% CI=0.9796596
 
-# Estimate per 10 nmol/L: HR= 0.91 95% CI (0.84-0.98)
+# Summary estimate per 10 nmol/L: HR= 0.91 95% CI (0.84-0.98)
 
 
 ####--------Breast cancer specific mortality-------------####
@@ -61,7 +61,7 @@ log(1)/24.96 # = 0
 0*10 # 0 
 exp(0) #= 1
 
-# So the estimate per 10 nmol/L is HR 0.91 95% CI 0.825-1.00 -use it in the dose-response-
+# Summary estimate per 10 nmol/L is HR 0.91 95% CI 0.825-1.00 -use it in the dose-response-
 
 
 
