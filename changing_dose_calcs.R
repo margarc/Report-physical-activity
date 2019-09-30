@@ -1,6 +1,6 @@
 # For the dose-respose (example with Hatse 2012 paper-vitD)
 # Paper reports continuous result per 10ng/ml
-# Need to convert to per 10 nmol/L to harmonise data and calculate dose
+# Need to convert HRs and 95% CIs to per 10 nmol/L to harmonise data and calculate dose
 
 # 10 ng/ml*2.496=24.96 nmol/L 
 
