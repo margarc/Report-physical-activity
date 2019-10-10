@@ -40,3 +40,9 @@ View(brefibr) #----> now converted to numeric
 
 # also need to check & generate the individual dose-response slopes #
 
+summary(mod.cc)
+# predict function allows the user to express the log-linear trend for any different amount
+# For example, by setting delta = 11
+
+predict(mod.cc, delta = 11, exp = TRUE)
+# exp=TRUE or expo=TRUE gives the exp(coeff)
